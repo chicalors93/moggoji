@@ -2,4 +2,4 @@ rootProject.name = "api"
 
 include(':application')
 include(':domain')
-include(':core')
+include(':core:encryption')
