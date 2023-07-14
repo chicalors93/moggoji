@@ -3,6 +3,8 @@ rootProject.name = "api"
 include(':application')
 include(':domain')
 
+include(':core:configuration:database-configuration')
+
 include(':core:context:database-context')
 include(':core:context:exception-context')
 include(':core:encryption')

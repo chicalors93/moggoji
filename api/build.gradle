@@ -31,22 +31,5 @@ project(':application') {
 project(':domain') {
     allprojects {
         bootJar.enabled = false
-
-        dependencies {
-            implementation 'com.querydsl:querydsl-core'
-            implementation 'com.querydsl:querydsl-jpa'
-            annotationProcessor "com.querydsl:querydsl-apt:${dependencyManagement.importedProperties['querydsl.version']}:jpa"
-            annotationProcessor 'jakarta.persistence:jakarta.persistence-api'
-        }
-
-        def querydslSrcDir = 'src/main/generated'
-
-        sourceSets {
-            main {
-                java {
-                    srcDirs += [ querydslSrcDir ]
-                }
-            }
-        }
     }
 }
