@@ -1,0 +1,5 @@
+dependencies {
+    implementation(project(':core:configuration:database-configuration'))
+    implementation(project(':core:context:exception-context'))
+    implementation(project(':core:encryption'))
+}

@@ -1,7 +1,8 @@
 rootProject.name = "api"
 
 include(':application')
-include(':domain')
+
+include(':domain:user-domain')
 
 include(':core:configuration:database-configuration')
 
