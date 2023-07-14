@@ -34,5 +34,15 @@ project(':domain') {
             annotationProcessor "com.querydsl:querydsl-apt:${dependencyManagement.importedProperties['querydsl.version']}:jpa"
             annotationProcessor 'jakarta.persistence:jakarta.persistence-api'
         }
+
+        def querydslSrcDir = 'src/main/generated'
+
+        sourceSets {
+            main {
+                java {
+                    srcDirs += [ querydslSrcDir ]
+                }
+            }
+        }
     }
 }
