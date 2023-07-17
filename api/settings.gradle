@@ -5,6 +5,7 @@ include(':application')
 include(':domain:user-domain')
 
 include(':core:configuration:database-configuration')
+include(':core:configuration:security-configuration:jwt-security')
 
 include(':core:context:database-context')
 include(':core:context:exception-context')
