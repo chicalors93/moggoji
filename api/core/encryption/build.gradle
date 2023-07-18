@@ -1,3 +1,5 @@
 dependencies {
     implementation('org.springframework.boot:spring-boot-starter-security')
+
+    implementation(project(':core:context:exception-context'))
 }
